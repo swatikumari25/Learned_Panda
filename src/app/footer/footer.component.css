@@ -1,0 +1,20 @@
+.footertext
+{
+    text-align: right;
+   
+}
+.text-right{
+    float: right;
+}
+.page-footer{
+    width:100%;
+    max-height:40px;
+    margin-top:25px;
+}
+.list-unstyled list-inline{
+    line-height: 1px;
+    padding-bottom: 5px;
+}
+.text-left{
+    padding:8px 4px 8px 5px;
+}

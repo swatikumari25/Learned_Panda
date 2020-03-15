@@ -1,0 +1,56 @@
+<div class="container">
+<div class="card card-image"
+  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+  <div class="text-white  d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div class="sectionovertext">
+      <h3 class="card-title pt-2 imgtext"><strong>Learn With The Learned Panda</strong></h3>
+      <p class="imgtext">Most Comprehensive Tutorial for Almost all Programming Languages. Loved by over 5,00,000 users.</p>
+      <a class="imagetext">Start Free Tutorial <i class="fa fa-graduation-cap"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="card largecard">
+<div class="card-title largecardtitle"> Featured Courses</div>
+<div class ="card-body">
+<div class="card-deck">
+  <div class="card mb-4" *ngFor="let x of FeaturedCourses">
+    <div class="view overlay">
+      <img class="card-img-top" src="{{x.cardimg}}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title smallcardtitle">{{x.cardtitle}}</h4>
+      <p class="card-text">{{x.cardtext}}</p>
+      <button type="button"class="playbutton" mdbBtn color="info" mdbWavesEffect>{{x.Buttontext}} <mdb-icon fas icon="play" class="ml-1"></mdb-icon></button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  <div class="card largecard">
+  <div class="card-title largecardtitle">FeaturedDownloads </div>
+<div class ="card-body">
+<div class="card-deck">
+  <div class="card mb-4" *ngFor="let x of FeaturedDownloads">
+    <div class="view overlay">
+      <img class="card-img-top" src="{{x.cardimg}}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title smallcardtitle">{{x.cardtitle}}</h4>
+      <p class="card-text">{{x.cardtext}}</p>
+        <div class="inner"><button type="button" class="button" mdbBtn color="success" mdbWavesEffect>{{x.Buttontext1}} <mdb-icon fas icon="eye" class="ml-1"></mdb-icon></button></div>
+        <div class="inner"><button type="button" class="button" mdbBtn color="info" mdbWavesEffect>{{x.Buttontext2}} <mdb-icon fas icon="download" class="ml-1"></mdb-icon></button></div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
